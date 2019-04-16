@@ -1,0 +1,17 @@
+spring:
+  rabbitmq:
+    host: rabbit-mq
+    port: 5672
+    username: guest
+    password: guest
+  cloud:
+    stream:
+      bindings:
+        input:
+          destination: hotel
+          group: housekeeping
+      rabbit:
+        bindings:
+          input:
+            consumer:
+              autoBindDlq: true
