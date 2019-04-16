@@ -1,4 +1,6 @@
 spring:
+  application:
+    name: housekeeping-consumer
   rabbitmq:
     host: rabbit-mq
     port: 5672
